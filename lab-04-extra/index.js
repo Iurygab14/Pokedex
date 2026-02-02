@@ -6,7 +6,6 @@ addBtn.addEventListener("click", () => {
     buscarPokemon(pokemon);
 });
 
-
 function buscarPokemon(pokemon) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
     .then(response => {
@@ -45,7 +44,6 @@ function buscarPokemon(pokemon) {
         })
     .catch(error => console.error('Erro: ', error));
 }
-
     
 function corFundo(tipos) {
     if(tipos[0] === 'fire') {
